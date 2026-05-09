@@ -34,6 +34,12 @@
     </div>
   </nav>
 
+  <!-- PT-BR hint tooltip (visible when page is in EN) -->
+  <div class="lang-hint" id="lang-hint" role="tooltip" aria-label="Mudar para Português">
+    Não está familiarizado com Inglês?<br>
+    <strong>Clique aqui e leia em Português-BR</strong>
+  </div>
+
   <!-- Mobile menu -->
   <div class="mobile-menu" id="mobile-menu">
     <ul>
@@ -681,9 +687,25 @@
       });
     });
 
-    // i18n PT <-> EN
+    // i18n PT <-> EN  (EN is the default first impression)
     const langBtn = document.getElementById('lang-toggle');
-    let currentLang = 'pt';
+    const langHint = document.getElementById('lang-hint');
+    let currentLang = 'en';
+
+    // Dismiss hint helper
+    function dismissHint() {
+      langHint.classList.add('hidden');
+      setTimeout(() => langHint.remove(), 500);
+    }
+
+    // Hint click also triggers language switch
+    langHint.addEventListener('click', () => {
+      applyLang('pt');
+      dismissHint();
+    });
+
+    // Auto-dismiss hint after 9 seconds
+    setTimeout(dismissHint, 9000);
 
     const staticTranslations = {
       en: {
@@ -772,10 +794,19 @@
       document.documentElement.lang = lang === 'en' ? 'en' : 'pt-BR';
       langBtn.textContent = lang === 'en' ? 'PT' : 'EN';
       langBtn.setAttribute('aria-label', lang === 'en' ? 'Mudar para Português' : 'Switch to English');
+      // Amber pulse only when page is in EN (invite to switch to PT)
+      langBtn.classList.toggle('pt-available', lang === 'en');
       currentLang = lang;
     }
 
-    langBtn.addEventListener('click', () => applyLang(currentLang === 'pt' ? 'en' : 'pt'));
+    langBtn.addEventListener('click', () => {
+      const next = currentLang === 'pt' ? 'en' : 'pt';
+      applyLang(next);
+      dismissHint();
+    });
+
+    // Initialize in English on first load
+    applyLang('en');
   </script>
 </body>
 </html>

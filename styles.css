@@ -162,6 +162,60 @@ ul { list-style: none; }
   box-shadow: var(--glow-sm);
 }
 
+/* Lang toggle — amber pulse state (page is in EN, PT available) */
+@keyframes pulse-amber {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(251,191,36,0); border-color: rgba(251,191,36,0.5); }
+  50%       { box-shadow: 0 0 0 5px rgba(251,191,36,0.15), 0 0 20px rgba(251,191,36,0.55); border-color: var(--amber); }
+}
+.lang-toggle.pt-available {
+  color: var(--amber);
+  border-color: rgba(251,191,36,0.5);
+  animation: pulse-amber 2.2s ease-in-out infinite;
+}
+.lang-toggle.pt-available:hover {
+  background: var(--amber-dim);
+  box-shadow: 0 0 24px rgba(251,191,36,0.45);
+}
+
+/* Lang hint tooltip */
+.lang-hint {
+  position: fixed;
+  top: 62px;
+  right: 16px;
+  z-index: 998;
+  background: rgba(8,8,8,0.97);
+  border: 1px solid var(--amber);
+  border-radius: 10px;
+  padding: 10px 14px 10px 12px;
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  max-width: 218px;
+  box-shadow: 0 0 20px rgba(251,191,36,0.18), 0 4px 18px rgba(0,0,0,0.6);
+  cursor: pointer;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+  animation: hint-in 0.5s ease 0.8s both;
+}
+@keyframes hint-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.lang-hint::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  right: 28px;
+  width: 12px;
+  height: 12px;
+  background: rgba(8,8,8,0.97);
+  border-top: 1px solid var(--amber);
+  border-left: 1px solid var(--amber);
+  transform: rotate(45deg);
+}
+.lang-hint strong { color: var(--amber); font-weight: 600; }
+.lang-hint.hidden { opacity: 0; transform: translateY(-8px); pointer-events: none; }
+
 /* ============================================================
    HERO
    ============================================================ */
