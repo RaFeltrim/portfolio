@@ -259,65 +259,132 @@
     <div class="container">
       <div class="section-label">// projetos selecionados</div>
       <h2 class="section-title">O que eu construí</h2>
-      <div class="projects-grid">
+
+      <!-- Featured row -->
+      <div class="projects-grid projects-featured-row">
 
         <article class="project-card featured">
+          <div class="project-card-top">
+            <div class="project-icon-wrap"><i class="bi bi-speedometer2"></i></div>
+            <div class="project-links-wrap">
+              <a href="https://github.com/RaFeltrim/Executive-QA-View" target="_blank" rel="noopener" aria-label="Ver Executive QA View no GitHub"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <span class="project-label">Produto · Cliente Real · v2.0.0</span>
+          <h3>Executive QA View</h3>
+          <p>Dashboard executivo de QA para cliente corporativo (projeto CNPJ Alfa Numérico). Mapeamento de stakeholders, rastreamento de frentes de trabalho, métricas em tempo real e varredura de evidências por IA (Google Gemini). <strong>73/73 testes passando</strong>, deploy em produção no Vercel.</p>
+          <div class="project-tech">
+            <span>React 19</span><span>TypeScript</span><span>Vite</span><span>Supabase</span><span>Tailwind</span><span>Google Gemini AI</span><span>XLSX</span>
+          </div>
+        </article>
+
+        <article class="project-card featured-half">
+          <div class="project-card-top">
+            <div class="project-icon-wrap purple"><i class="bi bi-robot"></i></div>
+            <div class="project-links-wrap">
+              <a href="https://github.com/RaFeltrim/secure-ai-studio" target="_blank" rel="noopener" aria-label="Ver Secure AI Studio"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <span class="project-label">AI · Segurança · LGPD</span>
+          <h3>Secure AI Studio</h3>
+          <p>Plataforma corporativa para geração de vídeos e imagens com IA generativa (Replicate, Google Veo, Stability AI). Arquitetura <em>Zero Data Retention</em>, conformidade LGPD, controle de budget automático e cobertura de testes >85%.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Flask</span><span>Replicate API</span><span>AWS S3</span><span>Docker</span><span>CI/CD</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Regular grid -->
+      <div class="projects-grid projects-main-grid">
+
+        <article class="project-card">
+          <div class="project-card-top">
+            <div class="project-icon-wrap teal"><i class="bi bi-kanban"></i></div>
+            <div class="project-links-wrap">
+              <a href="https://github.com/RaFeltrim/lasy-ai-crm" target="_blank" rel="noopener" aria-label="Ver Lasy AI CRM"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <span class="project-label">Full-Stack · CRM</span>
+          <h3>Lasy AI CRM</h3>
+          <p>CRM moderno com pipeline Kanban drag-and-drop em 5 estágios, tracking de interações, import/export CSV, busca avançada e sincronização em tempo real entre janelas via Supabase Realtime.</p>
+          <div class="project-tech">
+            <span>Next.js 14</span><span>TypeScript</span><span>Supabase</span><span>Tailwind</span><span>Playwright</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-top">
+            <div class="project-icon-wrap amber"><i class="bi bi-building-lock"></i></div>
+            <div class="project-links-wrap">
+              <a href="https://github.com/RaFeltrim/sigeco-condo-access" target="_blank" rel="noopener" aria-label="Ver SIGECO"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <span class="project-label">Full-Stack · 112 commits</span>
+          <h3>SIGECO</h3>
+          <p>Sistema de controle de acesso condominial com portal do porteiro (produção), dashboard de métricas ao vivo, gestão de visitantes e logs de auditoria. Portal administrativo em desenvolvimento ativo.</p>
+          <div class="project-tech">
+            <span>React</span><span>TypeScript</span><span>Node.js</span><span>Prisma</span><span>Socket.IO</span><span>Cypress</span>
+          </div>
+        </article>
+
+        <article class="project-card">
           <div class="project-card-top">
             <div class="project-icon-wrap"><i class="bi bi-journal-text"></i></div>
             <div class="project-links-wrap">
               <a href="https://github.com/RaFeltrim/Web_e_Mobile" target="_blank" rel="noopener" aria-label="Ver SIBiSC no GitHub"><i class="bi bi-github"></i></a>
             </div>
           </div>
-          <span class="project-label">Projeto Acadêmico · USP</span>
+          <span class="project-label">Acadêmico · USP</span>
           <h3>SIBiSC — Hub Cultural</h3>
-          <p>Web-app responsivo para as bibliotecas municipais de São Carlos. Centraliza notícias, eventos e catálogo de acervo com busca geolocalizada da unidade mais próxima. Desenvolvido com React, Supabase, CI/CD e governança ágil completa.</p>
+          <p>Web-app para as bibliotecas municipais de São Carlos. Notícias, eventos e catálogo com busca geolocalizada, mock data completo, 9 páginas roteadas e QA documentado com casos de teste funcionais e de segurança.</p>
           <div class="project-tech">
-            <span>React</span><span>Vite</span><span>Supabase</span><span>CSS Modules</span><span>React Router</span>
+            <span>React</span><span>Vite</span><span>Supabase</span><span>CSS Modules</span>
           </div>
         </article>
 
         <article class="project-card">
           <div class="project-card-top">
-            <div class="project-icon-wrap"><i class="bi bi-robot"></i></div>
+            <div class="project-icon-wrap purple"><i class="bi bi-stars"></i></div>
             <div class="project-links-wrap">
-              <a href="https://github.com/RaFeltrim" target="_blank" rel="noopener" aria-label="Ver GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://github.com/RaFeltrim/us-avaliator" target="_blank" rel="noopener" aria-label="Ver us-avaliator"><i class="bi bi-github"></i></a>
             </div>
           </div>
-          <span class="project-label">Framework · Open Source</span>
+          <span class="project-label">Framework · AI Agents</span>
           <h3>us-avaliator</h3>
-          <p>Framework de IA com múltiplos agentes especializados (PM, PO, QA, TL, Arch) para avaliação e geração de artefatos a partir de User Stories. Automatiza análise documental, Gherkin e planos de teste.</p>
+          <p>Framework multi-agente de IA com personas especializadas (PM, PO, QA, TL, Arch) para avaliação de User Stories. Gera Gherkin, planos de teste e análise documental de forma automatizada.</p>
           <div class="project-tech">
-            <span>AI Agents</span><span>Gherkin</span><span>Python</span><span>Claude API</span>
+            <span>AI Agents</span><span>Python</span><span>Gherkin</span><span>Claude API</span>
           </div>
         </article>
 
         <article class="project-card">
           <div class="project-card-top">
-            <div class="project-icon-wrap"><i class="bi bi-shop"></i></div>
+            <div class="project-icon-wrap teal"><i class="bi bi-book-half"></i></div>
             <div class="project-links-wrap">
-              <span class="lock-badge"><i class="bi bi-lock"></i></span>
+              <a href="https://github.com/RaFeltrim/QA-Guide" target="_blank" rel="noopener" aria-label="Ver QA Guide"><i class="bi bi-github"></i></a>
             </div>
           </div>
-          <span class="project-label">Freelance · Privado</span>
-          <h3>MKP Manager</h3>
-          <p>Sistema de gestão de marketplace com automação de scraping para Mercado Livre, Shopee e Magalu. Dashboard analítico, integração com ERP Tiny e pipeline de relatórios. Mais de 10 lojas monitoradas simultaneamente.</p>
-          <div class="project-tech">
-            <span>Node.js</span><span>Playwright</span><span>Supabase</span><span>Python</span><span>Vite</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card-top">
-            <div class="project-icon-wrap"><i class="bi bi-book-half"></i></div>
-            <div class="project-links-wrap">
-              <a href="https://github.com/RaFeltrim" target="_blank" rel="noopener" aria-label="Ver QA Guide"><i class="bi bi-github"></i></a>
-            </div>
-          </div>
-          <span class="project-label">Recurso Educativo</span>
+          <span class="project-label">Open Source · Bilíngue PT/EN</span>
           <h3>QA Guide</h3>
-          <p>Guia completo de qualidade de software em PT-BR e EN, cobrindo estratégias de shift left testing, automação, mocking, observabilidade e carreira em QA. Usado como material de referência no dia a dia.</p>
+          <p>Recurso educativo open-source de QA com trilhas de aprendizado do estágio ao sênior. Cobre Cypress, Pytest, k6, Postman, JMeter, GitHub Actions e documentação de boas práticas de automação.</p>
           <div class="project-tech">
-            <span>HTML</span><span>CSS</span><span>Bilíngue PT/EN</span>
+            <span>Gherkin</span><span>TypeScript</span><span>Python</span><span>CI/CD</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-top">
+            <div class="project-icon-wrap amber"><i class="bi bi-shop"></i></div>
+            <div class="project-links-wrap">
+              <span class="lock-badge"><i class="bi bi-lock-fill"></i> privado</span>
+            </div>
+          </div>
+          <span class="project-label">Freelance · Automação</span>
+          <h3>MKP Manager</h3>
+          <p>Sistema proprietário de gestão de marketplace monitorando 10+ lojas simultaneamente em Mercado Livre, Shopee e Magalu. Scraping automatizado, dashboard analítico e integração com ERP Tiny.</p>
+          <div class="project-tech">
+            <span>Node.js</span><span>Playwright</span><span>Supabase</span><span>Python</span>
           </div>
         </article>
 

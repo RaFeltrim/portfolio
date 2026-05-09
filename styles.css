@@ -643,6 +643,36 @@ section { padding: 100px 0; }
   border-radius: 4px;
 }
 
+/* Projects - two-row layout */
+.projects-featured-row {
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 20px;
+}
+.projects-main-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.project-card.featured-half {
+  background: linear-gradient(135deg, var(--bg-card), rgba(167,139,250,0.05));
+  border-color: rgba(167,139,250,0.2);
+}
+.project-card.featured-half:hover { border-color: rgba(167,139,250,0.4); }
+
+/* Icon wrap color variants */
+.project-icon-wrap.purple { background: var(--purple-dim); border-color: rgba(167,139,250,0.2); }
+.project-icon-wrap.purple i { color: var(--purple); }
+.project-icon-wrap.teal   { background: var(--teal-dim);   border-color: rgba(45,212,191,0.2);  }
+.project-icon-wrap.teal i  { color: var(--teal);  }
+.project-icon-wrap.amber  { background: var(--amber-dim);  border-color: rgba(251,191,36,0.2);  }
+.project-icon-wrap.amber i { color: var(--amber); }
+
+@media (max-width: 900px) {
+  .projects-featured-row { grid-template-columns: 1fr; }
+  .projects-main-grid    { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 576px) {
+  .projects-main-grid { grid-template-columns: 1fr; }
+}
+
 /* ============================================================
    CONQUISTAS
    ============================================================ */
