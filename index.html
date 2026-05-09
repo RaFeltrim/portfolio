@@ -70,6 +70,41 @@
     <div class="hero-scroll"><a href="#sobre"><i class="bi bi-chevron-double-down"></i></a></div>
   </section>
 
+  <!-- Trifecta: Os 3 Pilares -->
+  <section id="trifecta">
+    <div class="container">
+      <div class="trifecta-inner">
+        <div class="trifecta-code-block">
+          <span class="tc-comment">// a interseção que define cada entrega</span><br>
+          <span class="tc-keyword">const</span> <span class="tc-fn">posicionamento</span> <span class="tc-op">=</span> {<br>
+          &nbsp;&nbsp;<span class="tc-key">domínio:</span>&nbsp;&nbsp;&nbsp;<span class="tc-str">"QA / SDET"</span>,<span class="tc-comment">// garantir qualidade como função de engenharia</span><br>
+          &nbsp;&nbsp;<span class="tc-key">mecanismo:</span> <span class="tc-str">"Software Engineering"</span>,<span class="tc-comment">// construir automação que não vira dívida técnica</span><br>
+          &nbsp;&nbsp;<span class="tc-key">alavanca:</span>&nbsp;&nbsp;<span class="tc-str">"AI Agents"</span>,<span class="tc-comment">// multiplicar impacto além do esforço manual</span><br>
+          }
+        </div>
+        <div class="trifecta-cards">
+          <div class="trifecta-card">
+            <i class="bi bi-shield-check"></i>
+            <h3>QA / SDET</h3>
+            <p>Shift Left, Matriz de Risco, cobertura de fluxos críticos. Qualidade não é etapa — é arquitetura embutida desde o primeiro commit.</p>
+          </div>
+          <div class="trifecta-x">×</div>
+          <div class="trifecta-card mid">
+            <i class="bi bi-code-square"></i>
+            <h3>Software Engineering</h3>
+            <p>CI/CD, Design Patterns, Clean Code, Playwright, K6. Automação sustentável com observabilidade real do sistema.</p>
+          </div>
+          <div class="trifecta-x">×</div>
+          <div class="trifecta-card">
+            <i class="bi bi-robot"></i>
+            <h3>AI Agents</h3>
+            <p>LLM-as-a-Judge, geração de Gherkin, análise de falhas, AI Governance. IA como multiplicador do alcance do QA.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Sobre -->
   <section id="sobre">
     <div class="container">
@@ -278,6 +313,30 @@
       <div class="section-label">// projetos selecionados</div>
       <h2 class="section-title">O que eu construí</h2>
 
+      <!-- 4 Pilares do Guia Mestre -->
+      <div class="projects-pillars">
+        <div class="pp-item">
+          <span class="pp-num">01</span>
+          <span class="pp-name">App + QA + IA</span>
+          <span class="pp-desc">Ciclo completo com Playwright e módulo de IA</span>
+        </div>
+        <div class="pp-item">
+          <span class="pp-num">02</span>
+          <span class="pp-name">API &amp; Contratos</span>
+          <span class="pp-desc">JSON Schema, contrato de API, CI/CD pipeline</span>
+        </div>
+        <div class="pp-item">
+          <span class="pp-num">03</span>
+          <span class="pp-name">Legado + Robot</span>
+          <span class="pp-desc">Auditoria técnica e automação de fluxos críticos</span>
+        </div>
+        <div class="pp-item">
+          <span class="pp-num">04</span>
+          <span class="pp-name">POC de IA</span>
+          <span class="pp-desc">Agente que lê requisitos e gera Gherkin + testes</span>
+        </div>
+      </div>
+
       <!-- Featured row -->
       <div class="projects-grid projects-featured-row">
 
@@ -289,6 +348,7 @@
             </div>
           </div>
           <span class="project-label">Produto · Cliente Real · v2.0.0</span>
+          <span class="pillar-tag">P·01 App + QA + IA</span>
           <h3>Executive QA View</h3>
           <div class="narrative">
             <p><span class="narrative-tag">Desafio</span> Gestão de QA corporativo fragmentada em planilhas Excel — sem rastreabilidade, sem visibilidade executiva em tempo real.</p>
@@ -311,6 +371,7 @@
             </div>
           </div>
           <span class="project-label">AI · Segurança · LGPD</span>
+          <span class="pillar-tag">P·04 POC de IA</span>
           <span class="badge-governance"><i class="bi bi-shield-check"></i> AI Governance &amp; Ethics</span>
           <h3>Secure AI Studio</h3>
           <div class="narrative">
@@ -335,6 +396,7 @@
             </div>
           </div>
           <span class="project-label">Full-Stack · CRM</span>
+          <span class="pillar-tag">P·02 API &amp; Contratos</span>
           <h3>Lasy AI CRM</h3>
           <p>CRM moderno com pipeline Kanban drag-and-drop em 5 estágios, tracking de interações, import/export CSV, busca avançada e sincronização em tempo real entre janelas via Supabase Realtime.</p>
           <div class="project-tech">
@@ -350,6 +412,7 @@
             </div>
           </div>
           <span class="project-label">Full-Stack · 112 commits</span>
+          <span class="pillar-tag">P·03 Legado + Robot</span>
           <h3>SIGECO</h3>
           <p>Sistema de controle de acesso condominial com portal do porteiro (produção), dashboard de métricas ao vivo, gestão de visitantes e logs de auditoria. Portal administrativo em desenvolvimento ativo.</p>
           <div class="project-tech">
@@ -365,6 +428,7 @@
             </div>
           </div>
           <span class="project-label">Acadêmico · USP</span>
+          <span class="pillar-tag">P·01 App + QA + IA</span>
           <h3>SIBiSC — Hub Cultural</h3>
           <p>Web-app para as bibliotecas municipais de São Carlos. Notícias, eventos e catálogo com busca geolocalizada, mock data completo, 9 páginas roteadas e QA documentado com casos de teste funcionais e de segurança.</p>
           <div class="project-tech">
@@ -380,6 +444,7 @@
             </div>
           </div>
           <span class="project-label">Framework · AI Agents</span>
+          <span class="pillar-tag">P·04 POC de IA</span>
           <span class="badge-governance"><i class="bi bi-shield-check"></i> AI Governance &amp; Ethics</span>
           <h3>us-avaliator</h3>
           <div class="narrative">
@@ -399,6 +464,7 @@
             </div>
           </div>
           <span class="project-label">⭐ Open Source · Bilíngue PT/EN · Recurso Gratuito</span>
+          <span class="pillar-tag">P·02 API &amp; Contratos</span>
           <h3>QA Guide</h3>
           <p>Recurso educativo open-source de QA com trilhas de aprendizado do estágio ao sênior. Cobre Cypress, Pytest, k6, Postman, JMeter, GitHub Actions e boas práticas de automação. <strong>Referência para a comunidade brasileira de QA.</strong></p>
           <div class="project-tech">
@@ -414,6 +480,7 @@
             </div>
           </div>
           <span class="project-label">Freelance · Automação</span>
+          <span class="pillar-tag">P·03 Legado + Robot</span>
           <h3>MKP Manager</h3>
           <p>Sistema proprietário de gestão de marketplace monitorando 10+ lojas simultaneamente em Mercado Livre, Shopee e Magalu. Scraping automatizado, dashboard analítico e integração com ERP Tiny.</p>
           <div class="project-metric">
@@ -472,6 +539,50 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Para CTOs e Tech Leads -->
+  <section id="cta-pro">
+    <div class="container">
+      <div class="cta-pro-inner">
+        <div class="section-label">// para CTOs e Tech Leads</div>
+        <h2>O que você ganha com um <span class="highlight">SDET</span> na equipe</h2>
+        <div class="cta-pro-grid">
+          <div class="cta-pro-item">
+            <i class="bi bi-check2-circle"></i>
+            <div>
+              <strong>Qualidade integrada ao ciclo</strong>
+              <span>Não é uma camada de checklist adicionada no final do sprint. É shift left: requisito → cenário → automação → CI/CD.</span>
+            </div>
+          </div>
+          <div class="cta-pro-item">
+            <i class="bi bi-check2-circle"></i>
+            <div>
+              <strong>Cobertura com métricas reais</strong>
+              <span>73/73 testes em produção. 83% de redução de esforço operacional. 30% de ganho em tempo de descoberta técnica para stakeholders.</span>
+            </div>
+          </div>
+          <div class="cta-pro-item">
+            <i class="bi bi-check2-circle"></i>
+            <div>
+              <strong>IA como multiplicador de alcance</strong>
+              <span>Agentes que geram Gherkin, analisam logs de falhas, detectam drift de dados e garantem AI Governance — LLM-as-a-Judge em CI/CD.</span>
+            </div>
+          </div>
+          <div class="cta-pro-item">
+            <i class="bi bi-check2-circle"></i>
+            <div>
+              <strong>Observabilidade real do sistema</strong>
+              <span>K6, Grafana, Prometheus, Lighthouse. Porque "os testes passaram" não é o mesmo que "o usuário conseguiu comprar".</span>
+            </div>
+          </div>
+        </div>
+        <div class="cta-pro-actions">
+          <a href="#contato" class="btn-primary">Conversar sobre a vaga <i class="bi bi-arrow-right"></i></a>
+          <a href="https://www.linkedin.com/in/rafael-feltrim-me" target="_blank" rel="noopener" class="btn-ghost"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        </div>
       </div>
     </div>
   </section>
