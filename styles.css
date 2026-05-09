@@ -144,6 +144,24 @@ ul { list-style: none; }
 }
 .mobile-menu a:hover { color: var(--accent-light); }
 
+/* Lang toggle */
+.lang-toggle {
+  font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.08em;
+  background: transparent;
+  color: var(--accent-light);
+  border: 1px solid var(--accent-border);
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  flex-shrink: 0;
+}
+.lang-toggle:hover {
+  background: var(--accent-dim);
+  box-shadow: var(--glow-sm);
+}
+
 /* ============================================================
    HERO
    ============================================================ */
@@ -457,6 +475,33 @@ section { padding: 100px 0; }
   color: var(--teal); background: var(--teal-dim);
   border: 1px solid rgba(45,212,191,0.2); padding: 4px 10px; border-radius: 4px;
 }
+
+/* Narrative: Desafio › Solução › Impacto */
+.narrative { margin: 10px 0 6px; }
+.narrative p { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 8px; }
+.narrative-tag {
+  display: inline-block;
+  font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent-light); background: var(--accent-dim);
+  border: 1px solid var(--accent-border);
+  border-radius: 4px; padding: 1px 7px; margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* pill-highlight — Playwright, K6, Grafana, Prometheus */
+.pill-highlight {
+  border-color: var(--accent-mid) !important;
+  box-shadow: 0 0 8px rgba(109,40,217,0.25);
+}
+.pill-teal.pill-highlight {
+  border-color: var(--teal) !important;
+  box-shadow: 0 0 8px rgba(45,212,191,0.2);
+}
+
+/* sobre-note (7º Semestre · Cloud Practitioner) */
+.sobre-note { font-size: 0.82rem !important; color: var(--text-dim) !important; margin-top: 4px !important; }
+.sobre-note em { color: var(--text-dim) !important; font-style: italic !important; }
 
 /* Metric callout */
 .project-metric {
